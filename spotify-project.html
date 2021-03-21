@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Kabiltan Kalaichelvan</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" /> 
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo">Kabiltan's Website</a>
+				</div>
+				<nav>
+                    <div class="dropdown">
+                        <button class="dropbtn">Projects</button>
+                        <div class="dropdown-content">
+                          <a href="spotify-project.html">Spotfiy Playlist Creator</a>
+                          <a href="pong-project.html">Pong</a>
+                          <a href="pokemon-project.html">Pokemon Quiz Game</a>
+                        </div>
+                    </div>
+                </nav>
+			</header>
+
+            <h1 class="project_one_header">Spotify Playlist Creator</h1>
+            <div class="motivation">
+                <h2 class="paragraph">Description</h2> 
+                <article>This project is a web application that allows users to automatically generate a playlist on their Spotify account based on an input word or sentence.
+                         My motivation for this project is my love for music a spotify. I listen to music through spotify everyday whether it's during a workout or while I am 
+                         doing my homework.
+                </article>
+
+                <h2 class="development">Development</h2>
+                <div class="authentication">
+                    <p style="float: right;">The first part of developing this web application was researching and reading documentation. For this project,
+                    since I wanted to work with spotify, my website needed to interact with the Spotify API. The picture below 
+                    is an authentication flow chart that visualsizes the sequence of API calls that need to be made in order to retreive an access token. Access tokens 
+                    are essentially keys that are exchanged by the backend server for user data.
+                   </p>
+                    <p style="float: left;"></p><img src="./images/Authentication-Flow.JPG" alt="Spotify Authentication Flow"></p>
+                </div>
+                <div class="technologies">
+                    <p style="float: right;">The second part of developing this web application was writing the actual code. For this project, I wrote the frontend of my website
+                        in HTML, CSS, and Javascript which is pretty standard for almost all websites on the modern web. For the backend I used a web framework called Flask which
+                        I wrote the code for in Python. The backend of my website handles all the requests and API calls while the frontend provides a method for users to interact
+                        with the backend.
+                   </p>
+                    <p style="float: left;"></p><img src="./images/Spotify-Tech.jpg" width = "1700" height = "600" alt="Technologies"></p>
+                </div>
+            </div>
+            
+    </body>
+</html>
