@@ -1,0 +1,199 @@
+@mixin phone {
+  @media only screen and (max-width: 479px) {
+    @content;
+  }
+}
+
+@mixin phablet {
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+// Fonts
+$sans-serif: BlinkMacSystemFont,
+'Segoe UI',
+'Roboto',
+'Ubuntu',
+'Helvetica Neue',
+sans-serif;
+
+$monospace: 'SF Mono',
+-apple-system,
+source-code-pro,
+Menlo,
+Monaco,
+Consolas,
+'Courier New',
+monospace;
+
+// Colors
+
+// Config -----------------------------------
+$syntax-hue: 220;
+$syntax-saturation: 13%;
+$syntax-brightness: 18%;
+
+// Monochrome -----------------------------------
+$mono-1: hsl($syntax-hue, 14%, 71%); // default text
+$mono-2: hsl($syntax-hue, 9%, 55%);
+$mono-3: hsl($syntax-hue, 10%, 40%);
+
+// Colors -----------------------------------
+$red: hsl(355, 65%, 65%);
+$orange: hsl(29, 54%, 61%);
+$yellow: hsl(39, 67%, 69%);
+$green: hsl(95, 38%, 62%);
+$cyan: hsl(187, 47%, 55%);
+$blue: hsl(207, 82%, 66%);
+$purple: hsl(286, 60%, 67%);
+
+// Base colors -----------------------------------
+$syntax-fg: $mono-1;
+$syntax-bg: hsl($syntax-hue, $syntax-saturation, $syntax-brightness);
+$syntax-bg-lighter: darken($syntax-fg, 26%);
+$syntax-accent: rgb(127, 203, 254);
+// $syntax-guide: fade($syntax-fg, 15%);
+// $syntax-accent: hsl($syntax-hue, 100%, 66%);
+
+$colors: ('red': $red,
+  'orange': $orange,
+  'yellow': $yellow,
+  'green': $green,
+  'cyan': $cyan,
+  'blue': $blue,
+  'purple': $purple,
+  'gray': $syntax-bg-lighter,
+  'text': $syntax-fg,
+);
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: $sans-serif;
+  background-color: $syntax-bg;
+  color: $syntax-fg;
+  scrollbar-color: $syntax-fg $syntax-bg;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include phone {
+    padding: 0px 40px;
+  }
+
+  @include phablet {
+    padding: 0px 80px;
+  }
+
+  @include tablet {
+    padding: 0px 100px;
+  }
+
+  @include desktop {
+    padding: 0px 140px;
+  }
+}
+
+code {
+  font-family: $monospace;
+}
+
+.monospace {
+  font-family: $monospace;
+}
+
+.icons-item {
+  height: 18px;
+  width: 18px;
+  fill: $syntax-bg-lighter;
+
+  &:hover {
+    fill: $mono-2;
+  }
+
+  &:focus {
+    outline: 1;
+  }
+}
+
+.logo {
+  height: 75px;
+  width: 75px;
+}
+
+@each $name,
+$hex in $colors {
+  .accent-#{$name} {
+    color: $hex;
+  }
+}
+
+@each $name,
+$hex in $colors {
+  .link-#{$name} {
+    color: $hex;
+    display: inline-block;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $hex;
+      outline: 0;
+
+      &:after {
+        width: 100%;
+      }
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 1px;
+      position: relative;
+      background-color: $hex;
+      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+  }
+}
+
+// Highlighting
+::selection {
+  background-color: rgba($syntax-bg-lighter, 0.2);
+}
+
+#site {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  background-color: $syntax-bg;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 1px solid $syntax-bg-lighter;
+  border-radius: 7px;
+}
