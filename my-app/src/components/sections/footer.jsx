@@ -5,7 +5,6 @@ class Footer extends Component {
   render() {
     return (
       <div className='footer'>
-        <p align='center'>Designed and Built by Shannon Lau, 2022.</p>
       </div>
     );
   }

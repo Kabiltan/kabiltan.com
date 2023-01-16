@@ -8,7 +8,6 @@ class Card extends Component {
       title,
       detail,
       tags,
-      img,
       color,
       github,
       video,
@@ -16,11 +15,6 @@ class Card extends Component {
     } = this.props.project;
     return (
       <div className='card'>
-        <div
-          className='img'
-          style={{
-            backgroundImage: `url(${require('../assets/img/' + img)})`,
-          }}></div>
 
         <div className='card-content'>
           <h1 className={`accent-${color}`}>{title}</h1>

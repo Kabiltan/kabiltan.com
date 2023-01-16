@@ -15,14 +15,11 @@ class Hero extends Component {
         <div className='hero'>
           <div className='hero-content'>
             <Fade duration={duration}>
-              <LogoIcon />
             </Fade>
             <Fade duration={duration} delay={delay}>
               <h1 className='hero-text'>
-                I'm <span className='name'>Shannon Lau</span>, a
-                software engineer and creative technologist. Let's build
-                human-centered experiences, together.{' '}
-                <span className='accent-green'>NYC-bred.</span>
+                I'm <span className='name'>Kabiltan Kalaichelvan</span>, a
+                Computer Engineering student at The University of Wisconsin-Madison.{' '}
               </h1>
             </Fade>
             <Fade duration={duration} delay={delay * 2}>
@@ -30,18 +27,15 @@ class Hero extends Component {
                 Check out my{' '}
                 <a
                   className='link-yellow'
-                  href='/shannon-lau-resume.pdf'
+                  href='/Kabiltan_s_Resume__College_Only.pdf'
                   target='_blank'
                   rel='noopener noreferrer'>
                   resume
                 </a>{' '}
-                and let's talk:{' '}
-                <a
-                  className='link-red'
-                  href='https://mail.google.com/mail/?view=cm&fs=1&to=shanlau@umich.edu'
-                  target='_blank'
-                  rel='noopener noreferrer'>
-                  shanlau@umich.edu
+                and let's connect:{' '}
+                <a 
+                className='link-red'
+                href="mailto:kalaichelvan@wisc.edu">kalaichelvan@wisc.edu
                 </a>
               </h2>
             </Fade>

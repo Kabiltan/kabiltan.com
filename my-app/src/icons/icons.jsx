@@ -3,26 +3,21 @@ import {
   IconGitHub,
   IconInstagram,
   IconLinkedIn,
-  IconYouTube,
 } from './../icons';
 
 const socialMedia = [
   {
     name: 'GitHub',
-    url: 'https://www.github.com/slau8',
+    url: 'https://github.com/Kabiltan',
   },
   {
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/shanlau',
+    url: 'https://www.linkedin.com/in/kabiltan/',
   },
   {
     name: 'Instagram',
-    url: 'https://www.instagram.com/slau.ghtered',
-  },
-  // {
-  //   name: 'YouTube',
-  //   url: 'https://www.youtube.com/channel/UCAwe4_4fOMw1C4KGIWET8zg/',
-  // },
+    url: 'https://www.instagram.com/cobb1246',
+  }
 ];
 
 class Icons extends Component {
@@ -51,8 +46,6 @@ class Icons extends Component {
         return <IconInstagram />;
       case 'LinkedIn':
         return <IconLinkedIn />;
-      case 'YouTube':
-        return <IconYouTube />;
       default:
     }
   }

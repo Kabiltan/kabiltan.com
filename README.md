@@ -1,2 +1,0 @@
-# kabiltan.com
- Personal Website
