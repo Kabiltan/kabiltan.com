@@ -33,20 +33,16 @@ class About extends Component {
             natural langugage processing 
           </a>
           {' '}
-          to 
-           quantify employee sentiment.
-        </p>{' '}
-        <p>
-          For the summer of 2023, I am very excited to work as a
-          software engineer intern at{' '}
+          to quantify employee sentiment. In the summer of 2023,
+          I interned as a software engineer at {' '}
           <a
             className='link-yellow'
             target='_blank'
             rel='noopener noreferrer'>
-            Amazon!
-          </a>
-        </p>{' '}
-        <p>
+            Amazon
+          </a> where I 
+          collaborated with Chase Bank to bring edit funding 
+          source and edit autopay functionality to the Amazon website.
           In my free time, when I'm not coding, I enjoy playing {' '}
           <a
             className='link-green'

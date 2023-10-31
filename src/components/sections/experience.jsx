@@ -9,17 +9,32 @@ class Experience extends Component {
       {
         company: 'UW-Madison DoIT Help Desk',
         url: 'https://it.wisc.edu/services/help-desk/',
-        title: 'Technical Writer',
+        title: 'Student Manager',
         start: 'November 2019',
         end: 'Present',
         city: 'Madison',
         state: 'WI',
         details: [
           'Provide over the phone, chat, and email support to faculty, students, and staff.',
-          'Trained over 20 newly hired employees.',
-          'Created web applications to provide Covid-19 information to 40,000 campus personnel.',
+          'Train newly hired employees.',
+          'Answer questions from agents working on the floor and ensure operations run smoothly'
         ],
         color: 'red',
+      },
+      {
+        company: 'Amazon',
+        url: 'https://www.amazon.com/',
+        title: 'Software Engineer Intern',
+        start: 'May 2023',
+        end: 'August 2023',
+        city: 'Arlington',
+        state: 'VA',
+        details: [
+          'Collaborated with Chase Bank to transition edit funding source and edit autopay to Amazon website',
+          'Wrote and tested API calls to allow Amazon to communicate with Chase bank',
+          'Improved current user interface to allow customers to seamlessly edit their funding source and edit autopay setups in 33% fewer button clicks'
+        ],
+        color: 'yellow',
       },      
       {
         company: 'Travelers Insurance',
@@ -35,22 +50,7 @@ class Experience extends Component {
           'Demoed final application to a group of Senior Vice Presidents.'
         ],
         color: 'red',
-      },
-      {
-        company: 'UW-Madison BadgerLoop',
-        url: 'https://badgerloop.org/',
-        title: 'Badgerloop Team Member',
-        start: 'September 2019',
-        end: 'May 2021',
-        city: 'Madison',
-        state: 'WI',
-        details: [
-          'Assisted in selecting a new retroflective sensor for slippage detection and velocity measurements on the driving wheel.',
-          'Assisted in redesigning the telemetry retroflective sensor circuit.',
-          'Assisted in population of printed circuit boards.'
-        ],
-        color: 'red',
-      },
+      }
     ],
   };
   render() {

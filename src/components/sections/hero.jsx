@@ -27,7 +27,7 @@ class Hero extends Component {
                 Check out my{' '}
                 <a
                   className='link-yellow'
-                  href='/Kabiltan_s_Resume__College_Only.pdf'
+                  href='/Kabiltan_s_Resume_New_Grad.pdf'
                   target='_blank'
                   rel='noopener noreferrer'>
                   resume
