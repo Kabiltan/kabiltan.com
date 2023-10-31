@@ -21,7 +21,7 @@ class Projects extends Component {
         tags: ['Javascript', 'HTML', 'CSS'],
         color: 'red',
         link:
-          'https://kabiltan.github.io/Pong.html',
+          'https://kabiltan.github.io/Pong',
       },
       {
         title: 'Spotify Playlist Creator',
