@@ -11,7 +11,7 @@ class Head extends Component {
         <meta name='theme-color' content='#282c34' />
         <meta
           name='description'
-          content="I'm Kabiltan Kalaichelvan, a Computer Engineering student at The University of Wisconsin-Madison."
+          content="I'm Kabiltan Kalaichelvan, a Computer Engineering alumni from The University of Wisconsin-Madison."
         />
         <meta
           name='apple-mobile-web-app-status-bar-style'

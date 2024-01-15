@@ -15,9 +15,10 @@ class Experience extends Component {
         city: 'Madison',
         state: 'WI',
         details: [
-          'Provide over the phone, chat, and email support to faculty, students, and staff.',
-          'Train newly hired employees.',
-          'Answer questions from agents working on the floor and ensure operations run smoothly'
+          'Providing exceptional customer support through phone calls, email, and chat, having successfully resolved 2000+ calls and 1000+ emails and chats',
+          'Actively contributing to the hiring processes by directly interviewing and training 100+ candidates/employees across 4 years',
+          'Advising and guiding 80 current agents on how to resolve complex cases to ensure operations run smoothly',
+          'Creating and maintaining 4000 easily accessible knowledge base documents to inform 40,000+ campus affiliates about university sponsored software'
         ],
         color: 'red',
       },
@@ -30,9 +31,9 @@ class Experience extends Component {
         city: 'Arlington',
         state: 'VA',
         details: [
-          'Collaborated with Chase Bank to transition edit funding source and edit autopay to Amazon website',
-          'Wrote and tested API calls to allow Amazon to communicate with Chase bank',
-          'Improved current user interface to allow customers to seamlessly edit their funding source and edit autopay setups in 33% fewer button clicks'
+          'Designed, tested, and implemented two API calls, using Spring, that facilitated seamless communication between Amazon and Chase Bank',
+          'Optimized React.js/React Native user interface, reducing the number of clicks needed to edit funding sources and autopay setups by 33%',
+          'Utilized Jest, JUnit, and Mockito to unit test implementation and achieve 95%+ line coverage for all code reviews'
         ],
         color: 'yellow',
       },      
@@ -45,9 +46,9 @@ class Experience extends Component {
         city: 'St. Paul',
         state: 'MN',
         details: [
-          'Worked on a team to design and develop a full stack application that uses natural language processing to quantify the emotions of 100+ interns and 2000+ employees',
-          'Deployed full stack application to AWS using services such as API Gateway, Lambda, DynamoDB, EC2, and S3.',
-          'Demoed final application to a group of Senior Vice Presidents.'
+          'Led a two-person team in the design and development of a full-stack application that leveraged React.js, Node.js , Node.js, Express.js, MongoDB and natural language processing (NLP) to quantify the emotions of 100+ interns',
+          'Deployed full stack application to AWS using API Gateway, Lambda, DynamoDB, EC2, and S3',
+          'Presented and demonstrated the application to two Senior Vice Presidents, showcasing its features and potential'
         ],
         color: 'red',
       }

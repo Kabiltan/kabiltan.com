@@ -9,14 +9,14 @@ class About extends Component {
         <p>
           I'm Kabiltan, an aspiring software engineer, looking to
           explore the intersection of machine learning and software
-          engineering. I currently attend the{' '}
+          engineering. I recently graduated from the {' '}
           <a
             className='link-red'
             target='_blank'
             rel='noopener noreferrer'>
             University of Wisconsin-Madison
           </a>
-          , where I am a senior studying Computer Engineering. 
+          {' '} with Highest Distinction and earned a degree in Computer Engineering. 
           During the summmer of 2022, I was a software engineer intern at{' '}
           <a
             className='link-red'

@@ -19,7 +19,7 @@ class Hero extends Component {
             <Fade duration={duration} delay={delay}>
               <h1 className='hero-text'>
                 I'm <span className='name'>Kabiltan Kalaichelvan</span>, a
-                Computer Engineering student at The University of Wisconsin-Madison.{' '}
+                Computer Engineering alumni from The University of Wisconsin-Madison.{' '}
               </h1>
             </Fade>
             <Fade duration={duration} delay={delay * 2}>
@@ -27,7 +27,7 @@ class Hero extends Component {
                 Check out my{' '}
                 <a
                   className='link-yellow'
-                  href='/Kabiltan_s_Resume_New_Grad.pdf'
+                  href='/Kabiltan_s_Resume.pdf'
                   target='_blank'
                   rel='noopener noreferrer'>
                   resume
