@@ -1,8 +1,19 @@
 import React, { Component } from 'react';
 import Section from './../section';
+import applyStarLogic from '../../starLogic';
+// Importing React and Particles
+
+
+
 
 class About extends Component {
-  state = {};
+  constructor(props) {
+    super(props);
+    this.state = {
+    };
+  }
+
+  
   render() {
     return (
       <Section title='about'>
@@ -24,9 +35,9 @@ class About extends Component {
             rel='noopener noreferrer'>
             Traveler's Insurance 
           </a>
-           {' '} where I developed a full-stack application
-           that incorporated {' '}
-           <a 
+          {' '} where I developed a full-stack application
+          that incorporated {' '}
+          <a 
             className='link-blue'
             target='_blank'
             rel='noopener noreferrer'>
